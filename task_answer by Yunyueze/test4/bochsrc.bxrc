@@ -1,0 +1,6 @@
+romimage: file=/usr/local/share/bochs/BIOS-bochs-latest   
+vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest 
+ata0-master: type=disk, path="c.img"
+megs: 16
+cpu: count=1
+boot: disk 
