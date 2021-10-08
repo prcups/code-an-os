@@ -1,4 +1,4 @@
-.code 16
+.code16
 BOOTSEG = 0x7c0
 ljmp $BOOTSEG, $_start
 
@@ -27,7 +27,7 @@ _start:
 	movb $2, %bl
 	movw $plane, %bp
 	movw len, %cx
-	movw $0x1003, %dx
+	movw $0x1000, %dx
 	int $0x10
 
 	jmp .
